@@ -25,11 +25,11 @@
         android:text="@string/crime_details_label"/>
 
     <Button
-        android:id="@+id/crime_date"
+        android:id="@+id/crime_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <CheckBox
+    <Check
         android:id="@+id/crime_solved"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

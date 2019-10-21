@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public class CrimeLab {
     private static CrimeLab sCrimeLab;
-    private List<Crime> mCrimes;
+    private List<Dime> mCrimes;
 
     public static CrimeLab get(Context context) {
         if (sCrimeLab == null) {
@@ -24,7 +24,6 @@ public class CrimeLab {
             Crime crime = new Crime();
             crime.setTitle("Crime #" + i);
             crime.setSolved(i % 2 == 0);
-            mCrimes.add(crime);
         }
     }
 

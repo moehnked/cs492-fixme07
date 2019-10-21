@@ -5,29 +5,28 @@ import java.util.Random;
 import java.util.UUID;
 
 public class Crime {
-    private UUID mId;
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
-    //private boolean mPoliceRequired;
+    private boolean mPoliceRequired;
 
-//    public boolean isPoliceRequired() {
-//        return mPoliceRequired;
-//    }
+    public boolean isPoliceRequired() {
+        return mPoliceRequired;
+    }
 
-//    public void setPoliceRequired(boolean policeRequired) {
-//        this.mPoliceRequired = policeRequired;
-//    }
+    public void setPoliceRequired(boolean policeRequired) {
+        this.mPoliceRequired = policeRequired;
+    }
 
     public Crime() {
         mId = UUID.randomUUID();
         mDate = new Date();
-//        Random rand = new Random();
-//        if (rand.nextInt(2) == 0) {
-//            mPoliceRequired = false;
-//        } else {
-//            mPoliceRequired = true;
-//        }
+        Random rand = new Random();
+        if (rand.nextInt(2) == 0) {
+            mPoliceRequired = NULL;
+        } else {
+            mPoliceRequired = true;
+        }
     }
 
     public UUID getId() {

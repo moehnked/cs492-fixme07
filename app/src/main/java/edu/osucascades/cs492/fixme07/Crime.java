@@ -9,6 +9,7 @@ public class Crime {
     private Date mDate;
     private boolean mSolved;
     private boolean mPoliceRequired;
+    private UUID mId;
 
     public boolean isPoliceRequired() {
         return mPoliceRequired;
@@ -23,7 +24,7 @@ public class Crime {
         mDate = new Date();
         Random rand = new Random();
         if (rand.nextInt(2) == 0) {
-            mPoliceRequired = NULL;
+            mPoliceRequired = false;
         } else {
             mPoliceRequired = true;
         }
